@@ -29,7 +29,7 @@ st.markdown("""
 /* Style for the main content block to improve readability with background */
 .main .block-container {
     background-color: rgba(0, 0, 0, 0.6); /* Dark semi-transparent overlay */
-    backdrop-filter: blur(10px); /* Blur effect */
+    backdrop-filter: blur(5px); /* Blur effect */
     padding: 2rem;
     border-radius: 10px;
 }
@@ -69,9 +69,9 @@ def set_png_as_page_bg(png_file):
 
 # Call the function to set the background
 try:
-    set_png_as_page_bg('background.jpg')
+    set_png_as_page_bg('bg.jpg')
 except FileNotFoundError:
-    st.warning("background.jpg not found. Please add it to the folder for the background to work.")
+    st.warning("bg.jpg not found. Please add it to the folder for the background to work.")
 
 
 # --- SIDEBAR ---
